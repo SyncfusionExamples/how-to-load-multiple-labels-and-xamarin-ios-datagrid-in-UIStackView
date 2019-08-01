@@ -6,7 +6,7 @@ This app implements to load multiple labels and SfDataGrid in the UiStackView. B
 
 This project uses the following Syncfusion controls:
 
-* [SfDataGrid](https://www.syncfusion.com/xamarin-ui-controls/datagrid) - Refreshing view content.
+* [SfDataGrid](https://www.syncfusion.com/xamarin-ui-controls/datagrid)
 
 ## Screenshots
 

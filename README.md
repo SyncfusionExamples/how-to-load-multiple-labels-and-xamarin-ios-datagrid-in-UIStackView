@@ -33,23 +33,30 @@ Refer to the following link for more details:
 
    *Note: If you download the sample using the "Download ZIP" option, right-click it, select Properties, and then select Unblock.*
 
-2. Register your license key in the App.cs file as demonstrated in the following code.
+2. Register the license key in FinishedLaunching override method of AppDelegate.cs.    
+      
+       public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)   
+       {                                         
 
-        public App()
-        {
-            //Register Syncfusion license
-            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
+      	//Register Syncfusion license
+      	Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
+      
+      	// create a new window instance based on the screen size
+      	Window = new UIWindow(UIScreen.MainScreen.Bounds);
+      
+        // If you have defined a root view controller, set it here:
+      	// Window.RootViewController = myViewController;
+      
+      	// make the window visible
+      	Window.MakeKeyAndVisible();
+      
+      	return true;          
+       }
 
-            InitializeComponent();
+Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key#xamarinios) for more details.
 
-            MainPage = new NavigationPage(new MainPage());
-        }
-
-Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key#xamarinforms) for more details.
-
-3. Set any one of the platform specific projects (iOS, Android or UWP) as a start-up project.
-4. Clean and build the application.
-5. Run the application.
+3. Clean and build the application.
+4. Run the application.
 
 ## License
 

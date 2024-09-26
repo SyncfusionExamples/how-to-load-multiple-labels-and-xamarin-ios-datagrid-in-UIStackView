@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{8401A9C0-F608-4413-8D66-E6E1296C9EEC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Syncfusion.SfDataGrid.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Syncfusion.SfDataGrid.iOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;__UNIFIED__;__MOBILE__;__IOS__;IOS;SyncfusionFramework4_5_1;Xamarin;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;IOS;SyncfusionFramework4_5_1;Xamarin;</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'AppStore|AnyCPU'">
+    <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;IOS;SyncfusionFramework4_5_1;Xamarin;</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-xml|AnyCPU'">
+    <OutputPath>bin\Release-xml\</OutputPath>
+    <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;__UNIFIED__;__MOBILE__;__IOS__;IOS;SyncfusionFramework4_5_1;Xamarin;</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Release-xml\Syncfusion.SfDataGrid.iOS.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Syncfusion.GridCommon.Portable">
+      <HintPath>..\..\..\..\Component\lib\pcl\Syncfusion.GridCommon.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Linq.iOS">
+      <HintPath>..\..\..\..\Component\lib\ios-unified\Syncfusion.Linq.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\Forms\SfDataGrid.XForms\Src\Syncfusion.SfDataGrid.XForms\Control\Helper\XamarinExtentions.cs">
+      <Link>Control\Helpers\XamarinExtentions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\Forms\SfDataGrid.XForms\Src\Syncfusion.SfDataGrid.XForms\Control\Helper\ColumnDragAndDropEvents.cs">
+      <Link>Control\Helpers\ColumnDragAndDropEvents.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\Forms\SfDataGrid.XForms\Src\Syncfusion.SfDataGrid.XForms\Control\Helper\RowDragAndDropEvents.cs">
+      <Link>Control\Helpers\RowDragAndDropEvents.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\Forms\SfDataGrid.XForms\Src\Syncfusion.SfDataGrid.XForms\Control\InteractionControllers\GridColumnDragDropController.cs">
+      <Link>Control\InteractionController\GridColumnDragDropController.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\Forms\SfDataGrid.XForms\Src\Syncfusion.SfDataGrid.XForms\Control\InteractionControllers\GridDragDropController.cs">
+      <Link>Control\InteractionController\GridDragDropController.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\Forms\SfDataGrid.XForms\Src\Syncfusion.SfDataGrid.XForms\Control\InteractionControllers\GridRowDragDropController.cs">
+      <Link>Control\InteractionController\GridRowDragDropController.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\Forms\SfDataGrid.XForms\Src\Syncfusion.SfDataGrid.XForms\Control\Helper\UnBoundEvents.cs">
+      <Link>Control\Helpers\UnBoundEvents.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\Forms\SfDataGrid.XForms\Src\Syncfusion.SfDataGrid.XForms\Control\Runtime\GridColumnSizer.cs">
+      <Link>Control\Runtime\GridColumnSizer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\Forms\SfDataGrid.XForms\Src\Syncfusion.SfDataGrid.XForms\Control\Runtime\GridUnBoundColumn.cs">
+      <Link>Control\Runtime\GridUnBoundColumn.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\Forms\SfDataGrid.XForms\Src\Syncfusion.SfDataGrid.XForms\CellRenderer\GridUnBoundCellRenderer.cs">
+      <Link>GridCellRenderer\GridUnBoundCellRenderer.cs</Link>
+    </Compile>
+    <Compile Include="Control\HelperViews\BorderView.cs" />
+    <Compile Include="Control\HelperViews\IndicatorView.cs" />
+    <Compile Include="Control\Helpers\GridGroupingEvents.cs" />
+    <Compile Include="Control\Runtime\GridDataTopLevelGroup.cs" />
+    <Compile Include="Control\Runtime\GridSummaryColumn.cs" />
+    <Compile Include="Control\Runtime\GridVirtualizingCollectionView.cs" />
+    <Compile Include="Control\Runtime\PullToRefreshView.cs" />
+    <Compile Include="Control\SelectionController\GridSelectionController.cs" />
+    <Compile Include="Control\SelectionController\GridSelectionRowCollection.cs" />
+    <Compile Include="Control\SelectionController\IGridSelectionControl.cs" />
+    <Compile Include="Control\SelectionController\SelectionHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Control\DataGrid.cs" />
+    <Compile Include="Control\CellsControl\GridCell.cs" />
+    <Compile Include="Control\CellsControl\VirtualizingCellsControl.cs" />
+    <Compile Include="Control\Generator\DataColumn.cs" />
+    <Compile Include="Control\Generator\DataColumnBase.cs" />
+    <Compile Include="Control\Generator\DataRow.cs" />
+    <Compile Include="Control\Generator\DataRowBase.cs" />
+    <Compile Include="Control\Generator\RowGenerator.cs" />
+    <Compile Include="Control\Helpers\Enums.cs" />
+    <Compile Include="Control\Helpers\GridIndexResolver.cs" />
+    <Compile Include="Control\Runtime\GridColumn.cs" />
+    <Compile Include="Control\Runtime\GridItemPropertiesProvider.cs" />
+    <Compile Include="Control\Runtime\GridModel.cs" />
+    <Compile Include="Control\Runtime\GridQueryableCollectionViewWrapper.cs" />
+    <Compile Include="Control\ScrollablePanel\IElement.cs" />
+    <Compile Include="Control\ScrollablePanel\IRowGenerator.cs" />
+    <Compile Include="Control\ScrollablePanel\IScrollViewportChanged.cs" />
+    <Compile Include="Control\ScrollablePanel\VisualContainer.cs" />
+    <Compile Include="GridCellRenderer\IGridCellRenderer.cs" />
+    <Compile Include="GridCellRenderer\GridCellRendererBase.cs" />
+    <Compile Include="GridCellRenderer\GridCellRendererCollection.cs" />
+    <Compile Include="GridCellRenderer\GridCellTextViewRenderer.cs" />
+    <Compile Include="GridCellRenderer\GridHeaderCellRenderer.cs" />
+    <Compile Include="GridCellRenderer\GridVirtualizingCellRenderer.cs" />
+    <Compile Include="GridCellRenderer\GridVirtualizingCellRendererBase.cs" />
+    <Compile Include="GridCellRenderer\VirtualizingCellUIElementBin.cs" />
+    <Compile Include="Control\CellsControl\GridHeaderCellControl.cs" />
+    <Compile Include="Control\Runtime\SortColumnDescriptions.cs" />
+    <Compile Include="Control\Runtime\GroupColumnDescription.cs" />
+    <Compile Include="Control\Helpers\SortingEvents.cs" />
+    <Compile Include="Control\ScrollablePanel\ScrollViewer.cs" />
+    <Compile Include="GridCellRenderer\GridRowHeaderCellRenderer.cs" />
+    <Compile Include="Control\CellsControl\GridRowHeaderCell.cs" />
+    <Compile Include="Control\Helpers\GridEvents.cs" />
+    <Compile Include="Control\Helpers\RowHeightManager.cs" />
+    <Compile Include="Control\CellsControl\HeaderCellControl.cs" />
+    <Compile Include="Control\Style\SfDataGridTheme.cs" />
+    <Compile Include="Control\Helpers\GridColumnEvents.cs" />
+    <Compile Include="Control\Helpers\SfDataGridHelpers.cs" />
+    <Compile Include="Control\Helpers\ImageMapStream.cs" />
+    <Compile Include="Control\Helpers\GridScrollingEvents.cs" />
+    <Compile Include="Control\Helpers\IncrementalList.cs" />
+    <Compile Include="Control\Helpers\GridSelectionEvents.cs" />
+    <Compile Include="Control\Generator\SpannedDataRow.cs" />
+    <Compile Include="Control\Generator\SpannedDataColumn.cs" />
+    <Compile Include="Control\Generator\CoveredCellInfo.cs" />
+    <Compile Include="GridCellRenderer\GridCaptionSummaryCellRenderer.cs" />
+    <Compile Include="Control\Runtime\GridSummaryRow.cs" />
+    <Compile Include="Control\ScrollablePanel\CellElement.cs" />
+    <Compile Include="Control\Helpers\SwipeEvents.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Ascending.png" />
+    <EmbeddedResource Include="Resources\Descending.png" />
+    <EmbeddedResource Include="Resources\DragDown.png" />
+    <EmbeddedResource Include="Resources\DragUp.png" />
+    <EmbeddedResource Include="Resources\error2.png" />
+    <EmbeddedResource Include="Resources\Sort.png" />
+    <EmbeddedResource Include="Resources\Sort Descending.png" />
+    <EmbeddedResource Include="Resources\FirstPageIcon.png" />
+    <EmbeddedResource Include="Resources\LastPageIcon.png" />
+    <EmbeddedResource Include="Resources\NextPageIcon.png" />
+    <EmbeddedResource Include="Resources\PrevPageIcon.png" />
+    <EmbeddedResource Include="Resources\GroupCollapse.png" />
+    <EmbeddedResource Include="Resources\GroupExpander.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="DataPager\GridPagedCollectionViewWrapper.cs" />
+    <Compile Include="DataPager\SfDataPager.cs" />
+    <Compile Include="DataPager\Appearance\AppearanceManager.cs" />
+    <Compile Include="DataPager\Controls\IScrollableElement.cs" />
+    <Compile Include="DataPager\Controls\NumericButton.cs" />
+    <Compile Include="DataPager\Controls\PanelElement.cs" />
+    <Compile Include="DataPager\Controls\ScrollableElement.cs" />
+    <Compile Include="DataPager\Controls\SfPagerLabel.cs" />
+    <Compile Include="DataPager\Helper\Enums.cs" />
+    <Compile Include="DataPager\Helper\Events.cs" />
+    <Compile Include="DataPager\Helper\NotifyPropertyChangeHelper.cs" />
+    <Compile Include="DataPager\ItemGenerator\IItemGenerator.cs" />
+    <Compile Include="DataPager\ItemGenerator\ItemGenerator.cs" />
+    <Compile Include="DataPager\NavigationController\PageNavigationController.cs" />
+    <Compile Include="DataPager\Pages\Footer.cs" />
+    <Compile Include="DataPager\Pages\Header.cs" />
+    <Compile Include="DataPager\ScrollablePanel\NumericButtonPanel.cs" />
+    <Compile Include="DataPager\ScrollablePanel\ExtendedScrollView.cs" />
+  </ItemGroup>
+</Project>

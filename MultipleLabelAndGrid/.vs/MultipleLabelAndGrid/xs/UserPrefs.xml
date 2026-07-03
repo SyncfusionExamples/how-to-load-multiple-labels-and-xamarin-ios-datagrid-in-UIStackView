@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{38A26ED9-12A3-4AAF-8FD1-230CD453F59B}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.ItemProperties.MultipleLabelAndGrid automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.954ED523-1D14-4F4D-9B9F-64EDAA4912CC" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MultipleLabelAndGrid/MyLayout.cs">
+    <Files>
+      <File FileName="MultipleLabelAndGrid/Info.plist" />
+      <File FileName="MultipleLabelAndGrid/MyLayout.cs" Line="85" Column="109" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
